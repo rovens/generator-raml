@@ -10,8 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/rovens/generator-raml.git"
   },
+  "readme": "A RAML scaffolder",
   "keywords": [
-    "generator-yeoman",
+    "yeoman-generator",
     "raml"
   ],
   "author": "Robert Ovens",

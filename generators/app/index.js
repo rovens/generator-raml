@@ -55,6 +55,15 @@ module.exports = generator.Base.extend({
                 }
             )
         },
+        bower: function () {
+            this.fs.copyTpl(
+                this.templatePath('bower.json'),
+                this.destinationPath('bower.json'),
+                {
+                    appname : this.appname
+                }
+            )
+        },
         install: function () {
             this.installDependencies({
                 skipMessage: this.options['skip-install-message'],
