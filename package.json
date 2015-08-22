@@ -1,0 +1,27 @@
+{
+  "name": "generator-raml",
+  "version": "0.1.0",
+  "description": "A Yeoman scaffolder for RAML documentation projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rovens/generator-raml.git"
+  },
+  "keywords": [
+    "generator-yeoman",
+    "raml"
+  ],
+  "author": "Robert Ovens",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rovens/generator-raml/issues"
+  },
+  "homepage": "https://github.com/rovens/generator-raml#readme",
+  "dependencies": {
+    "string": "^3.3.1",
+    "yeoman-generator": "^0.20.3"
+  }
+}
