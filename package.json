@@ -1,6 +1,6 @@
 {
-  "name": "generator-raml",
-  "version": "0.1.0",
+  "name": "generator-ramlsite",
+  "version": "0.1.1",
   "description": "A Yeoman scaffolder for RAML documentation projects.",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rovens/generator-raml.git"
+    "url": "git+https://github.com/rovens/generator-ramlsite.git"
   },
   "readme": "A RAML scaffolder",
   "keywords": [
