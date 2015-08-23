@@ -2,6 +2,11 @@
   "name": "generator-ramlsite",
   "version": "0.1.2",
   "description": "A Yeoman scaffolder for RAML documentation projects.",
+  "author": {
+    "name": "Robert Ovens",
+    "email": "robert.ovens@gmail.com",
+    "url": "https://github.com/rovens"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Warning: no test specified\" && exit 0"
