@@ -17,9 +17,9 @@ Make a new directory, and `cd` into it:
 mkdir my-new-project && cd $_
 ```
 
-Run `yo angular`, optionally passing an app name:
+Run `yo ramlsite`, optionally passing an app name:
 ```
-yo angular [app-name]
+yo ramlsite [app-name]
 ```
 
 Run `grunt build` for building and `grunt serve` for preview
