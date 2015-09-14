@@ -24,5 +24,5 @@ yo ramlsite [app-name]
 
 Run `grunt build` for building and `grunt serve` for preview
 
-
+When running in production ensure that NODE_ENV is set to 'production'
 
