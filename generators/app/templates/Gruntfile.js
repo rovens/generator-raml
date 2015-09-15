@@ -66,6 +66,10 @@ module.exports = function (grunt) {
         },
         raml2html: {
             all: {
+                options: {
+                    mainTemplate: 'template.nunjucks',
+                    templatesPath: './raml2html-templates'
+                },
                 files: {
                     '.tmp/index.html': ['api/raml/api.raml']
                 }
