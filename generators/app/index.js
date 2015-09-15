@@ -40,6 +40,18 @@ module.exports = generator.Base.extend({
                 }
             )
         },
+        raml2html_templates: function () {
+            this.fs.copyTpl(
+                this.templatePath('raml2html-templates/*'),
+                this.destinationPath('raml2html-templates')
+            );
+        },
+        images: function () {
+            this.fs.copyTpl(
+                this.templatePath('images/*'),
+                this.destinationPath('images')
+            );
+        },
         gruntFile: function () {
             this.fs.copy(
                 this.templatePath('Gruntfile.js'),

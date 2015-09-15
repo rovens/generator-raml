@@ -1,6 +1,6 @@
 {
   "name": "generator-ramlsite",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "A Yeoman scaffolder for RAML documentation projects.",
   "author": {
     "name": "Robert Ovens",
