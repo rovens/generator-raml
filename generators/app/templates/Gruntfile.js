@@ -133,11 +133,11 @@ module.exports = function (grunt) {
             [
                 'raml2html',
                 'flatten-raml',
-                'watch:raml',
-                'watch:images',
                 'express:dev',
                 'wait',
-                'open'
+                'open',
+                'watch:raml',
+                'watch:images'
             ]);
     });
 };
