@@ -20,6 +20,9 @@
   "bugs": {
     "url": "https://github.com/rovens/generator-raml/issues"
   },
+  "scripts": {
+    "test": "mocha"
+  },
   "homepage": "https://github.com/rovens/generator-raml#readme",
   "dependencies": {
     "string": "^3.3.1",
