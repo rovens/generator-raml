@@ -2,11 +2,7 @@
   "name": "generator-ramlsite",
   "version": "0.2.6",
   "description": "A Yeoman scaffolder for RAML documentation projects.",
-  "author": {
-    "name": "Robert Ovens",
-    "email": "robert.ovens@gmail.com",
-    "url": "https://github.com/rovens"
-  },
+  "author": "Robert Ovens",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Warning: no test specified\" && exit 0"
@@ -20,7 +16,6 @@
     "yeoman-generator",
     "raml"
   ],
-  "author": "Robert Ovens",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/rovens/generator-raml/issues"
@@ -29,5 +24,13 @@
   "dependencies": {
     "string": "^3.3.1",
     "yeoman-generator": "^0.20.3"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-mocha-test": "^0.12.7",
+    "load-grunt-tasks": "^3.2.0",
+    "mocha": "^2.3.2",
+    "should": "^7.1.0"
   }
 }

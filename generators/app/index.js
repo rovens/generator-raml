@@ -48,8 +48,8 @@ module.exports = generator.Base.extend({
         },
         images: function () {
             this.fs.copyTpl(
-                this.templatePath('images/*'),
-                this.destinationPath('images')
+                this.templatePath('api/documentation/images/*'),
+                this.destinationPath('api/documentation/images')
             );
         },
         gruntFile: function () {

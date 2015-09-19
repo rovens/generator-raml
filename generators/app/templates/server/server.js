@@ -16,7 +16,7 @@ if (process.env.NODE_ENV === 'development') {
 	//app.use(require('connect-livereload')());
     app.use(require('connect-livereload')());
     //console.log(express.static(path.join(config.root, '.tmp')));
-    app.use(express.static(path.join(config.root, '.tmp')));
+    app.use(express.static(path.join(config.root, '../.tmp')));
 }
 
 if (process.env.NODE_ENV === 'production') {

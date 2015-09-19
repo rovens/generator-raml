@@ -28,24 +28,30 @@ module.exports = function (grunt) {
         },
         copy: {
             dist: {
-                files: [{
-                    expand: true,
-                    cwd: '.tmp',
-                    dest: 'dist/public',
-                    src: ['*']
-                },
+                files: [
+                    {
+                        expand: true,
+                        cwd: '.tmp',
+                        dest: 'dist/public',
+                        src: ['*']
+                    },
                     {
                         expand: true,
                         cwd: 'server',
                         dest: 'dist',
                         src: ['**/*']
-                    },
+                    }
+                ]
+            },
+            images: {
+                files:[
                     {
                         expand: true,
                         cwd: 'images',
-                        dest: 'dist',
-                        src: ['**']
-                    }]
+                        dest: '.tmp',
+                        src: ['**/*']
+                    }
+                ]
             }
         },
         watch: {
@@ -62,6 +68,10 @@ module.exports = function (grunt) {
             raml: {
                 files: ['api/**/*'],
                 tasks: ['raml2html']
+            },
+            images: {
+                files: ['images/**/*'],
+                tasks: ['copy:images']
             }
         },
         raml2html: {
@@ -84,6 +94,7 @@ module.exports = function (grunt) {
     grunt.registerTask('build', [
         'raml2html',
         'flatten-raml',
+        'copy:images',
         'copy:dist'
     ]);
 
@@ -122,10 +133,11 @@ module.exports = function (grunt) {
             [
                 'raml2html',
                 'flatten-raml',
+                'watch:raml',
+                'watch:images',
                 'express:dev',
                 'wait',
-                'open',
-                'watch:raml'
+                'open'
             ]);
     });
 };
