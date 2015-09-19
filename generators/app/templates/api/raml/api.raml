@@ -1,3 +1,32 @@
 #%RAML 0.8
----
-title: <%=appname%>
+ 
+title: World Music
+baseUri: http://example.api.com/{version}
+version: v1
+documentation:
+  - title: Introduction
+    content: !include ../documentation/introduction.md
+traits:
+  - paged:
+      queryParameters:
+        pages:
+          description: The number of pages to return
+          type: number
+/songs:
+  is: [ paged ]
+  get:
+    queryParameters:
+      genre:
+        description: filter the songs by genre
+  post:
+  /{songId}:
+    get:
+      responses:
+        200:
+          body:
+            application/json:
+              schema: !include ../schemas/song.json
+            application/xml:
+    delete:
+      description: |
+        This method will *delete* an **individual song**

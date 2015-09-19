@@ -47,8 +47,8 @@ module.exports = function (grunt) {
                 files:[
                     {
                         expand: true,
-                        cwd: 'images',
-                        dest: '.tmp',
+                        cwd: 'api/documentation/images',
+                        dest: '.tmp/images',
                         src: ['**/*']
                     }
                 ]
@@ -70,7 +70,7 @@ module.exports = function (grunt) {
                 tasks: ['raml2html']
             },
             images: {
-                files: ['images/**/*'],
+                files: ['api/documentation/images/**/*'],
                 tasks: ['copy:images']
             }
         },
@@ -133,6 +133,7 @@ module.exports = function (grunt) {
             [
                 'raml2html',
                 'flatten-raml',
+                'copy:images',
                 'express:dev',
                 'wait',
                 'open',

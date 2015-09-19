@@ -47,7 +47,7 @@ module.exports = generator.Base.extend({
             );
         },
         images: function () {
-            this.fs.copyTpl(
+            this.fs.copy(
                 this.templatePath('api/documentation/images/*'),
                 this.destinationPath('api/documentation/images')
             );

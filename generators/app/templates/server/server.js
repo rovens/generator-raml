@@ -16,13 +16,14 @@ if (process.env.NODE_ENV === 'development') {
 	//app.use(require('connect-livereload')());
     app.use(require('connect-livereload')());
     //console.log(express.static(path.join(config.root, '.tmp')));
-    app.use(express.static(path.join(config.root, '../.tmp')));
+    app.use('/',express.static(path.join(config.root, '../.tmp')));
+    app.use('/images',express.static(path.join(config.root, '../.tmp/images')));
 }
 
 if (process.env.NODE_ENV === 'production') {
     console.log(path.join(config.root, 'public'));
-    app.use(express.static(path.join(config.root, 'public')));
-
+    app.use('/', express.static(path.join(config.root, 'public')));
+    app.use('/images', express.static(path.join(config.root, 'images')))
 }
 
 app.listen(config.port, config.ip, function () {
