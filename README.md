@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/rovens/generator-raml.svg)](https://travis-ci.org/rovens/generator-raml)
+[![Build Status](https://travis-ci.org/rovens/generator-ramlsite.svg)](https://travis-ci.org/rovens/generator-ramlsite)
 
 # RAML Site Generator
 
